@@ -1,4 +1,3 @@
-import http from 'http';
 import router from "./src/routes";
 import express from "express"
 import bodyParser from "body-parser";

@@ -2,8 +2,10 @@ import router from "./src/routes";
 import express from "express"
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
-const port = process.env.PORT || 4000;
 const app = express();
+
+const port = process.env.PORT || 4000;
+
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use('/api',router)

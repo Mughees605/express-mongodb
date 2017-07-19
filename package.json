@@ -1,11 +1,15 @@
 {
   "name": "es6-express",
   "version": "1.0.0",
+   "engines" : {
+    "node" : "6.9.5",
+    "npm" : "5.3.0"
+  },
   "description": "",
   "main": "index.js",
-"scripts": {
+  "scripts": {
     "start": "./node_modules/.bin/babel-node server.js"
-},
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {

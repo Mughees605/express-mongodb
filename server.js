@@ -15,5 +15,5 @@ app.use('/api',router)
 // }).listen(3000,'localhost');
 mongoose.connect('mongodb://mughees605:mughees1997@ds163701.mlab.com:63701/es6-mongoose')
 app.listen(port,() => {
-    console.log("server is running at : " + port)
+    console.log("server is running at : " + process.env.PORT || 8080)
 })

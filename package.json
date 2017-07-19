@@ -8,7 +8,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "babel-node server.js"
+    "start": "babel-node server"
   },
   "author": "",
   "license": "ISC",

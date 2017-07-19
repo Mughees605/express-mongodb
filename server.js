@@ -6,6 +6,7 @@ const port = process.env.PORT || 4000;
 const app = express();
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
+app.use('/api',router)
 // http.createServer((req, res)=> {
 //     res.writeHead(200,{'Content-type':'text/plain'});
 //     res.end('HELLO WORLD');

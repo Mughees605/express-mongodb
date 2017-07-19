@@ -13,6 +13,6 @@ app.use('/api',router)
 //     res.end('HELLO WORLD');
 // }).listen(3000,'localhost');
 mongoose.connect('mongodb://mughees605:mughees1997@ds163701.mlab.com:63701/es6-mongoose')
-app.listen(process.env.port || 4000, function () {
+app.listen(process.env.PORT || 4000, function () {
     console.log("4000")
 })

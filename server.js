@@ -11,13 +11,6 @@ app.use('/api',router)
 //     res.writeHead(200,{'Content-type':'text/plain'});
 //     res.end('HELLO WORLD');
 // }).listen(3000,'localhost');
-app.use(function (req, res, next){
-  if (req.headers['x-forwarded-proto'] === 'https') {
-    res.redirect('http://' + req.hostname + req.url);
-  } else {
-    next();
-  }
-});
 mongoose.connect('mongodb://mughees605:mughees1997@ds163701.mlab.com:63701/es6-mongoose')
 app.listen(port, function () {
     console.log("server is running at : " + port)

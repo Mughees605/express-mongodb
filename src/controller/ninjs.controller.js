@@ -18,3 +18,9 @@ export let postNinja = (req, res) => {
         }
     })
 }
+
+export let putNinja = (req, res) => {
+    console.log('req.body ',req.body);
+    var myParams = req.params.id;
+    
+}

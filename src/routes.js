@@ -6,6 +6,7 @@ const router = Router();
 router.get('/',getNinja)
 
 router.post('/add',postNinja)
+router.put('/add/:id',putNinja)
 
 
 export default router;

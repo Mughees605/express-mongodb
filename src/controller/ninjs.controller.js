@@ -1,6 +1,7 @@
 import NinjaModel from '../models/ninja.model';
 
 export class Ninja {
+    
     constructor() { }
 
     static getNinja(req, res) {
@@ -37,8 +38,6 @@ export class Ninja {
             res.send(ninja)
         })
     }
-
-
 }
 
 

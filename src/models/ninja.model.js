@@ -8,6 +8,6 @@ const NinjaSchema = new Schema({
     available: { type: Boolean, default: false }
 })
 
-const Ninja = mongoose.model('ninja', NinjaSchema)
+const NinjaModel = mongoose.model('ninja', NinjaSchema)
 
-export default Ninja;
+export default NinjaModel;

@@ -1,15 +1,16 @@
 import { Router } from 'express';
-import { getNinja, postNinja, putNinja, deleteNinja } from "./controller/ninjs.controller"
+import { Ninja } from './controller/ninjs.controller'
+import { postNinja, putNinja, deleteNinja } from "./controller/ninjs.controller"
 
 const router = Router();
 
-router.get('/',getNinja)
+router.get('/',Ninja.getNinja);
 
-router.post('/add',postNinja)
+router.post('/add',Ninja.postNinja);
 
-router.delete('/delete/:id',deleteNinja)
+router.delete('/delete/:id',Ninja.deleteNinja);
 
-router.put('/add/:id',putNinja)
+router.put('/add/:id',Ninja.putNinja);
 
 
 export default router;
